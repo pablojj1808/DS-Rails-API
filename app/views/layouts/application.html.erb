@@ -15,20 +15,10 @@
 <%= render "partials/nav" %>
 <% if user_signed_in? %>
   <h1> Bienvenido <%= current_user.email %> </h1>
-
-
 <% end %>
 
   <%= yield %>
 
-<div class="card" style="width: 18rem;">
-  <img src="#" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Esto es una pruieba</h5>
-    <p class="card-text">Una prueba para ver si está bootstrap funcionando</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
