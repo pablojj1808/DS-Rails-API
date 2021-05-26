@@ -1,11 +1,13 @@
 <nav>
-  <ul><li><%= link_to "Inicio", root_path %></li>
-  <li><%= link_to "Comentarios", opinions_path, class:"" %></li>
-  <% if user_signed_in? %>
-  <li><%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %></li>
-  <% else %>
- <li><%= link_to "Iniciar sesión", new_user_session_path %></li>
- <li><%= link_to "Registrarse", new_user_registration_path %></li>
-  <% end %>
+  <ul>
+    <li><%= link_to "Inicio", root_path %></li>
+    <li><%= link_to "Comentarios", opinions_path, class: "" %></li>
+    <% if user_signed_in? %>
+      <li><%= link_to "Editar mi perfil", edit_user_registration_path %></li>
+      <li><%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %></li>
+    <% else %>
+      <li><%= link_to "Iniciar sesión", new_user_session_path %></li>
+      <li><%= link_to "Registrarse", new_user_registration_path %></li>
+    <% end %>
   </ul>
 </nav>
