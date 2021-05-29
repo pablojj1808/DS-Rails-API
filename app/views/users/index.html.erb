@@ -1,5 +1,17 @@
-<ul>
+<style>
+  .o {
+      margin-top: 30px;
+      text-align: center;
+      width: 60%;
+      margin-bottom: 500px;
+  }
+</style>
+<div class="list-group o">
+
   <% @users.each do |user| %>
-    <li><%= user.email %></li>
+  <a href="#" class="list-group-item col-sm list-group-item-action">
+    <%= user.email %>
+  </a>
   <% end %>
-</ul>
+</div>
+
