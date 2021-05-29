@@ -11,42 +11,42 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+  <div class=" field form-group">
+    <%= form.label :name , class: "control-label" %>
+    <%= form.text_field :name , class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :info %>
-    <%= form.text_area :info %>
+  <div class="form-group">
+    <%= form.label :info , class: "control-label" %>
+    <%= form.text_area :info , class:"form-control"  %>
   </div>
 
-  <div class="field">
-    <%= form.label :date %>
-    <%= form.datetime_select :date %>
+  <div class="form-group">
+    <%= form.label :date , class: "control-label" %>
+    <%= form.datetime_select :date , class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :price %>
-    <%= form.text_field :price %>
+  <div class="form-group">
+    <%= form.label :price, class: "control-label"  %>
+    <%= form.text_field :price , class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :nTickets %>
-    <%= form.number_field :nTickets %>
+  <div class="form-group">
+    <%= form.label :nTickets, class: "control-label"  %>
+    <%= form.number_field :nTickets , class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :img %>
-    <%= form.text_field :img %>
+  <div class="form-group">
+    <%= form.label :img, class: "control-label"  %>
+    <%= form.text_field :img , class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :color %>
-    <%= form.text_field :color %>
+  <div class="form-group">
+    <%= form.label :color, class: "control-label"  %>
+    <%= form.text_field :color , class:"form-control" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="btn btn-primary text-white m-2 w-100">
+    <%= form.submit class:"btn text-white" %>
   </div>
 <% end %>
