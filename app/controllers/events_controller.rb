@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  #before_action :set_event, only: %i[ show ]
+  before_action :set_event, only: %i[ show ]
   before_action :authenticate_user!
   # GET /events or /events.json
   def index
@@ -8,6 +8,7 @@ class EventsController < ApplicationController
 
   # GET /events/1 or /events/1.json
   def show
+    puts "estoy acá"
   end
 
   # GET /events/new
