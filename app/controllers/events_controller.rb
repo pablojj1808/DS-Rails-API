@@ -18,6 +18,7 @@ class EventsController < ApplicationController
 
   # GET /events/1/edit
   def edit
+    @event = Event.find(params[:id])
   end
 
   # POST /events or /events.json
@@ -49,8 +50,13 @@ class EventsController < ApplicationController
   end
 
   # DELETE /events/1 or /events/1.json
+  #
   def destroy
+    @event = Event.find(params[:id])
     @event.destroy
+
+    #redirect_to root_path
+    #@event.destroy
     respond_to do |format|
       format.html { redirect_to events_url, notice: "Event was successfully destroyed." }
       format.json { head :no_content }

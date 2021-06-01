@@ -5,40 +5,6 @@
 
 <h1>Events</h1>
 
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Info</th>
-      <th scope="col">Date</th>
-      <th scope="col">Price</th>
-      <th scope="col">Ntickets</th>
-      <th scope="col">Img</th>
-      <th scope="col">Color</th>
-      <th scope="col" colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @events.each do |event| %>
-      <tr>
-        <td scope="row"><%= event.name %></td>
-        <td><%= event.info %></td>
-        <td><%= event.date %></td>
-        <td><%= event.price %></td>
-        <td><%= event.nTickets %></td>
-        <td><%= event.img %></td>
-        <td><%= event.color %></td>
-        <td><%= link_to 'Show', event, class: "btn btn-outline-primary" %></td>
-        <td><%= link_to 'Edit', edit_event_path(event), class: "btn btn-outline-primary" %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-primary" %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
 
 <button type="button" class="btn btn-primary text-white m-2" style="float: right">
   <%= link_to 'New Event', new_event_path,  :class => "btn text-white" %>
