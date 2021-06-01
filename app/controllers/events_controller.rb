@@ -8,7 +8,7 @@ class EventsController < ApplicationController
 
   # GET /events/1 or /events/1.json
   def show
-    puts "estoy acá"
+    @opinions = Opinion.all
   end
 
   # GET /events/new
