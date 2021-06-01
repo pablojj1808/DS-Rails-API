@@ -53,6 +53,12 @@ class EventsController < ApplicationController
   # DELETE /events/1 or /events/1.json
   def destroy
     @event = Event.find(params[:id])
+    opinions = Opinion.all
+    opinions.each { |o|
+      if o.event_id == @event.id
+        o.destroy
+      end
+    }
     @event.destroy
 
     #redirect_to root_path
