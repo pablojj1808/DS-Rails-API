@@ -1,6 +1,26 @@
-<h1>Editing Event</h1>
 
-<%= render 'form', event: @event %>
 
-<%= link_to 'Show', @event %> |
-<%= link_to 'Back', events_path %>
+<div class="btn-group">
+  <p>
+    <%=link_to 'Back', events_path,  :class => "btn btn-primary m-3" %>
+  </p>
+  <p>
+    <%= link_to 'Show', @event , :class => "btn btn-outline-primary m-3" %>
+  </p>
+</div>
+
+<div class="container">
+  <div class="row d-flex justify-content-center align-items-center mb-4">
+    <div class="col p-4 a shadow rounded" style="background-color:#fff; height: fit-content;">
+
+      <div class="row m-1">
+        <h1>Editing Event</h1>
+      </div>
+
+      <div class="row p-3">
+        <%= render 'form', event: @event %>
+      </div>
+
+    </div>
+  </div>
+</div>
