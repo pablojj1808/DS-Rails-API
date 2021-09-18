@@ -1,24 +1,9 @@
-# README
+# Eventium
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplicación restful construida con Ruby on Rails para la práctica final de Desarrollo de Software UGR 2021.
 
-Things you may want to cover:
+📹 [demo del sitio](https://www.youtube.com/watch?v=IsfAUBWgZ6k&t=1s)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Autores
+- 👩🏻‍💻  [Raquel Molina Reche](https://github.com/rmr00)            :octocat:     
+- 👨🏻‍💻 [Pablo Jiménez Jiménez](https://github.com/pablojj1808)     :octocat:
